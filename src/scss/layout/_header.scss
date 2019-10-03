@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #131313;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2px;
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    padding: 0 0px;
+    text-align: left;
+  }
+  &__logo-container {
+    margin-right: 71px;
+  }
+  &__logo-text {
+    font-family: FuturaDemiC;
+    color: #E3B873;
+    font-size: 14px;
+    line-height: 85px;
+    text-transform: uppercase;
+  }
+  &__navigation {
+
+  }
+  &__navigation-list {
+    display: flex;
+    list-style: none;
+  }
+   &__navigation-item {
+    padding: 0 24px;
+  }
+  &__navigation-link-text {
+    font-family: FuturaBookC;
+    font-size: 14px;
+    line-height: 85px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    &:hover {
+      color: #E3B873;
+      transition: .5s;
+    }
+  }
+  &__phone {
+    margin-left: 49px;
+    margin-right: 20px;
+  }
+  &__phone-number {
+    font-family: FuturaDemiC;
+    color: #E3B873;
+    font-size: 14px;
+    line-height: 85px;
+    padding-right: 41px;
+    text-decoration: underline;
+  }
+  &__phone-button {
+    outline: none;
+    text-decoration: none;
+    background-color: #E3B873;
+    width: 161px;
+    line-height: 36px;
+    font-family: FuturaDemiC;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+  }
+}

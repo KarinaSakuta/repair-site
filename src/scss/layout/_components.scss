@@ -1,0 +1,54 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+  color: #f2c06b;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
