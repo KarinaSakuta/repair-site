@@ -5,8 +5,13 @@
   outline: 0;
 }
 
+html {
+  width: 100%
+}
+
 body {
   margin: 0 auto;
+  width: 100%;
 }
 
 a {
@@ -49,6 +54,9 @@ button {
 }
 
 .main {
-  max-width: 1440px;
   margin: 0 auto;
+}
+
+footer {
+  flex: 1;
 }

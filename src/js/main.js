@@ -2,7 +2,7 @@
   'use strict';
 
   function initSlickCarousel() {
-    $('.feedback-slider').slick({
+    $('.completed__description-slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       pauseOnHover: true,

@@ -1,3 +1,10 @@
+$mobile-width: 300px;
+$mobilebig-width: 400px;
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$mobilebig-width}) {
+    @content;
+  }
+}
 .header {
   width: 100%;
   align-items: center;
@@ -15,6 +22,10 @@
     max-width: 1440px;
     padding: 0 0px;
     text-align: left;
+    @include mobile {
+      max-width: 400px;
+      background-color: red;
+    }
   }
   &__logo-container {
     margin-right: 71px;
@@ -27,7 +38,9 @@
     text-transform: uppercase;
   }
   &__navigation {
-
+    @include mobile {
+      display: none;
+    }
   }
   &__navigation-list {
     display: flex;
