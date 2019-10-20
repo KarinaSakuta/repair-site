@@ -1,0 +1,263 @@
+.completed {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #131313;
+
+  @include mobile {
+    background-color: #252525;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 1074px;
+  }
+
+  &__description {
+    padding-top: 107px;
+    display: flex;
+    flex-direction: row;
+    @include mobile {
+      position: relative;
+      flex-direction: column;
+      padding-top: 36px;
+    }
+  }
+
+  &__description-text-container {
+    max-width: 441px;
+    margin-left: 102px;
+    margin-top: 68px;
+    @include mobile {
+      margin: 0 auto;
+    }
+  }
+
+  &__description-title {
+    width: 60%;
+    font-family: Yeseva One;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    @include mobile {
+      font-size: 22px;
+      line-height: 30px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  &__description-text {
+    margin-top: 21px;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+    @include mobile {
+      margin-bottom: 311px;
+      margin-top: 24px;
+      margin-left: 31px;
+      font-size: 14px;
+      width: 83%;
+      text-align: center;
+      line-height: 23px;
+    }
+  }
+
+  &__description-properties {
+    margin-top: 47px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include mobile {
+      width: 322px;
+      margin-left: 15px;
+    }
+  }
+
+  &__description-properties-item {
+    width: 190px;
+    &:nth-child(3) {
+      margin-top: 36px;
+      @include mobile {
+        margin-top: 27px;
+      }
+    }
+    &:nth-child(4) {
+      margin-top: 36px;
+      @include mobile {
+        margin-top: 27px;
+      }
+    }
+    @include mobile {
+      width: 157px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1051px) and (min-width: 769px) {
+    width: 121px;
+    margin: 0 auto;
+    }
+
+    @media (max-width: 1345px) and (min-width: 1052px) {
+    width: 150px;
+    margin: 0 auto;
+    }
+  }
+
+  &__description-properties-item-title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    word-wrap: normal;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__description-properties-item-text {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    margin-top: 3px;
+    line-height: 22px;
+    width: 58%;
+    color: #FFFFFF;
+    @include mobile {
+      margin-top: 7px;
+      line-height: 19px;
+      font-size: 14px;
+    }
+  }
+
+  &__navigation {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__navigation-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  &__navigation-item:nth-child(1) {
+    margin: 0 50px;
+  }
+
+  &__navigation-item:nth-child(2) {
+    margin: 0 12px;
+  }
+
+  &__navigation-item:nth-child(3) {
+    margin: 0 50px;
+  }
+
+  &__navigation-link-text {
+    font-family: Yeseva One;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__description-slider {
+    margin-top: 50px;
+    margin-left: 50px;
+    @include mobile {
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__description-slide-photo-img {
+    @include mobile {
+      max-width: 340px;
+      max-height: 241px;
+    }
+
+    @include desktop {
+      width: 350px;
+      height: 240px;
+    }
+  }
+
+  &__online-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 88px;
+    @include mobile {
+      margin-top: 60px;
+    }
+  }
+
+  &__online-control-text {
+    font-family: Yeseva One;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include mobile {
+      margin-bottom: 5px;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  &__online-control-img-container {
+    text-align: center;
+  }
+
+  &__online-control-image {
+    margin-top: 13px;
+  }
+
+  &__video-container {
+    position: relative;
+  }
+
+  &__video-source {
+    display: block;
+    position: absolute;
+    width: 817px;
+    height: 434px;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+    @include mobile {
+      width: 340px;
+      height: 207px;
+    }
+
+    @include desktop {
+      width: 600px;
+      height: 319px;
+    }
+  }
+
+  &__video-play {
+    display: block;
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, 123%);
+    @include mobile {
+      width: 37px;
+      height: 37px;
+      transform: translate(-50%, 303%);
+    }
+  }
+}

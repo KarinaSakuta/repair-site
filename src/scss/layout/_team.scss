@@ -1,0 +1,188 @@
+.team {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, black 73%, white 73%);
+  @include mobile {
+    background-color: #252525;
+  }
+  &__container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    padding-top: 90px;
+    font-family: Yeseva One;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include mobile {
+      letter-spacing: 1.2px;
+      padding-top: 193px;
+    }
+  }
+
+  &__img-title {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    @include desktop {
+      width: 175px;
+      margin: 0 35px;
+    }
+  }
+
+  &__short-text {
+    margin: 20px auto 0;
+    width: 30%;
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    @include mobile {
+      margin: 18px auto 0;
+      width: 85%;
+      line-height: 21px;
+      font-size: 15px;
+    }
+  }
+
+  &__command-container {
+    margin: 81px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 153px;
+    @include mobile {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &__command-item {
+    position: relative;
+    &:not(:last-child) {
+      @include mobile {
+        margin-bottom: 167px;
+      }
+    }
+    &:last-child {
+      @include mobile {
+        margin-top: -20px;
+      }
+    }
+  }
+
+  &__img-icon {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    @include desktop {
+      left: 4px;
+      top: -30px;
+      width: 60px;
+      height: 60px;
+    }
+
+    &:nth-child(1) {
+      @include mobile {
+        top: -35px;
+        left: 18px;
+      }
+    }
+    &:nth-child(2) {
+      @include mobile {
+        top: -57px;
+        left: 18px;
+      }
+    }
+    &:nth-child(3) {
+      @include mobile {
+      top: -35px;
+      left: 18px;
+      }
+    }
+  }
+  
+  &__description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -57px;
+    left: 21px;
+    width: 233px;
+    height: 137px;
+    background-color: white;
+    @include desktop {
+      width: 204px;
+      height: 121px;
+    }
+
+    @include mobile {
+      left: 25px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &_second {
+      @include mobile {
+        height: 159px;
+      }
+    }
+    &_third {
+      @include mobile {
+        height: 159px;
+      }
+    }
+  }
+
+  &__name {
+    margin-top: 9px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    color: #181818;
+  }
+
+  &__position {
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+    color: #959595;
+  }
+
+  &__experience {
+    margin-top: 28px;
+    width: 100%;
+    background: #E3B873;
+    font-family: Yeseva One;
+    font-size: 13px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    margin: 121px auto 0;
+    width: 35%;
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #363636;
+    @include mobile {
+      display: none;
+    }
+  }
+}

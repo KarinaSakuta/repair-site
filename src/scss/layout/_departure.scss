@@ -1,0 +1,227 @@
+.departure {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 208px;
+
+  @include mobile {
+    display: none;
+  }
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__stages {
+    margin-right: 55px;
+    @include desktop {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+  }
+
+  &__img {
+    @include desktop {
+      max-width: 350px;
+    }
+  }
+
+  &__items-container {
+    display: flex;
+    flex-direction: row;
+    @include desktop {
+      justify-content: space-around;
+    }
+  }
+
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    margin-top: 107px;
+    display: flex;
+    flex-direction: column;
+    width: 508px;
+    height: 510px;
+    background-color: #131313;
+    padding-top: 23px;
+    @include desktop {
+      margin: auto;
+      max-width: 300px;
+      margin-top: 0;
+    }
+  }
+
+  &__form-title {
+    margin: 0 auto 30px;
+    width: 57%;
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__label {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 48px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-family: 'FuturaMediumC';
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  ::-moz-placeholder {
+    font-family: 'FuturaMediumC';
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  :-moz-placeholder {
+    font-family: 'FuturaMediumC';
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  :-ms-input-placeholder {
+    font-family: 'FuturaMediumC';
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  &__input {
+    margin-bottom: 36px;
+    margin-left: 49px;
+    width: 408px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    padding-bottom: 9px;
+    &_last-item {
+      margin-bottom: 15px;
+    }
+
+    @include desktop {
+      width: 210px;
+    }
+  }
+
+  [id^=c]{
+    display: none;
+  }
+
+  [id^=c] + label{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    border: 1px solid #E3B873;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  [id^=c]:checked + label span{
+    position: relative;
+    display: inline-block;    
+    margin-left: -9px;   
+  }
+
+  [id^=c]:checked + label span:before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    width: 4px;
+    height: 2px;
+    background: white;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);  
+  }
+
+  [id^=c]:checked + label span:after{
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: -4px;
+    width: 7px;
+    height: 2px;
+    background: white;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);      
+  }
+
+  &__checkbox-container {
+    display: flex;
+    margin-left: 49px;
+    flex-direction: row;
+  }
+
+  &__checkbox-text {
+    margin-left: 9px;
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    @include desktop {
+      margin-left: 2px;
+      font-size: 14px;
+    }
+  }
+
+  &__submit-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__submit {
+    margin-right: 50px;
+    margin-top: 38px;
+    width: 213px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border: none;
+    font-family: FuturaDemiC;
+    font-size: 13px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include desktop {
+      margin-top: 11px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__help {
+    display: flex;
+    margin-left: 12px;
+    margin-top: 27px;
+    flex-direction: row;
+  }
+
+  &__help-text {
+    margin-top: 18px;
+    margin-left: 5px;
+    width: 48%;
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  }
+}

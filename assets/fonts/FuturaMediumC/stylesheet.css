@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('FuturaMediumC.woff2') format('woff2'),
+        url('FuturaMediumC.woff') format('woff'),
+        url('FuturaMediumC.ttf') format('truetype'),
+        url('FuturaMediumC.svg#FuturaMediumC') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

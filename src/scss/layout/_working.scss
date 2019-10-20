@@ -1,0 +1,161 @@
+.working {
+  margin: -143px auto 0;
+  padding-top: 424px;
+  width: 100%;
+  background-color: #131313;
+  @include mobile {
+    display: none;
+  }
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    @include desktop {
+      max-width: 769px;
+    }
+  }
+
+  &__how {
+    margin-left: 100px;
+    max-width: 473px;
+  }
+
+  &__short-text {
+    font-family: FuturaDemiC;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__title {
+    margin-top: 16px;
+    margin-bottom: 85px;
+    width: 34%;
+    font-family: Yeseva One;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+
+  &__part {
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__text-title {
+    margin-top: 18px;
+    width: 47%;
+    font-family: Yeseva One;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+
+  &__text {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    color: #FFFFFF;
+    &_first {
+      margin-top: 10px;
+      width: 73%;
+      line-height: 25px;
+    }
+
+    &_second {
+      margin-top: 12px;
+      width: 69%;
+      line-height: 26px;
+    }
+  }
+
+  &__steps {
+    margin-top: 82px;
+  }
+
+  &__steps-item {
+    &_first {
+      margin-right: 138px;
+      @include desktop {
+        margin-right: 50px;
+      }
+    }
+
+    &_second {
+      margin-right: 209px;
+      @include desktop {
+        margin-right: 50px;
+      }
+    }
+
+    &_fourth, &_fifth {
+      margin-right: 215px;
+      @include desktop {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  &__steps-first-line {
+    margin-bottom: 34px;
+  }
+
+  &__steps-second-line {
+    margin-bottom: 49px;
+  }
+
+  &__steps-first-line, &__steps-second-line {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__number {
+    font-family: Yeseva One;
+    font-size: 15px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    &_active {
+      opacity: 1;
+      width: 61%;
+    }
+  }
+
+  &__steps-text {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    &_active {
+      opacity: 1;
+      width: 61%
+    }
+
+    &_second {
+      width: 50%;
+    }
+
+    &_third {
+      width: 55%;
+    }
+
+    &_sixth {
+      width: 71%
+    }
+  }
+
+  &__img-example {
+    @include desktop {
+    width: 330px;
+    }
+  }
+}

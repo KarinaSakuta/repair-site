@@ -28,3 +28,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../../assets/fonts/FuturaMediumC/FuturaMediumC.woff2') format('woff2'),
+        url('../../assets/fonts/FuturaMediumC/FuturaMediumC.woff') format('woff'),
+        url('../../assets/fonts/FuturaMediumC/FuturaMediumC.ttf') format('truetype'),
+        url('../../assets/fonts/FuturaMediumC/FuturaMediumC.svg#FuturaMediumC') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../../assets/fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+        url('../../assets/fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

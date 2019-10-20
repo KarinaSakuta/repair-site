@@ -1,19 +1,6 @@
 (function() {
   'use strict';
 
-  function initSlickCarousel() {
-    $('.completed__description-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      pauseOnHover: true,
-      dots: false,
-      arrows: true,
-      infinite: true,
-      autoplay: true,
-      focusOnSelect: true
-    });
-  };
-
   function scrollDown() {
     var windowCoords = document.documentElement.clientHeight;
     (function scroll() {
@@ -26,8 +13,6 @@
       }
     })();
   };
-
-  initSlickCarousel();
 
   var btnScrollDown = document.querySelector('#scroll-down');
 

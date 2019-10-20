@@ -1,0 +1,275 @@
+.map {
+  margin: 381px auto 0;
+  width: 100%;
+  padding-bottom: 92px;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  @include mobile {
+    background-color: #252525;
+  }
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    @include mobile {
+      position: relative;
+    }
+  }
+
+  &__form {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    max-width: 885px;
+    left: 21px;
+    right: 0;
+    top: -220px;
+    background-color: #181818;
+    @include mobile {
+      left: 0;
+      top: -303px;
+    }
+  }
+
+  &__form-title {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    font-family: Yeseva One;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__form-inputs {
+    display: flex;
+    margin: 0 auto;
+    padding-left: 14px;
+    width: 550px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include mobile {
+      margin: 0 auto;
+      width: 340px;
+      flex-direction: column;
+      padding-left: 0;
+    }
+  }
+
+  &__form-name, &__form-phone, &__form-question {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-name {
+    margin-right: 59px;
+    margin-bottom: 43px;
+    @include mobile {
+      margin-right: 0;
+      margin-top: 9px;
+      margin-bottom: 61px;
+      line-height: 20px;
+    }
+  }
+
+  &__form-phone {
+    @include mobile {
+      margin-bottom: 61px;
+    }
+  }
+
+  &__form-question {
+    @include mobile {
+      margin-bottom: 22px;
+    }
+  }
+  
+  &__label {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    transform: rotate(-0.07deg);
+    @include mobile {
+      line-height: 19px;
+    }
+  }
+  
+  &__input {
+    width: 231px;
+    height: 29px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    @include mobile {
+      width: 340px;
+    }
+  }
+
+  &__input_max {
+    width: 516px;
+    @include mobile {
+      width: 340px;
+    }
+  }
+  
+  &__checkbox-container {
+    position: relative;
+    margin: 48px auto 0;
+    display: flex;
+    padding-left: 27px;
+    width: 353px;
+    @include mobile {
+      margin: 0;
+      width: 340px;
+      padding-left: 0;
+    }
+  }
+
+  &__checkbox-text {
+    padding-left: 8px;
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    @include mobile {
+      line-height: 19px;
+      padding-left: 9px;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  ::-moz-placeholder {
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  :-moz-placeholder {
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  :-ms-input-placeholder {
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  &__submit-container {
+    margin: 49px auto 0;
+    padding-right: 15px;
+    @include mobile {
+      margin: 0;
+      margin-top: 67px;
+    }
+  }
+  
+  &__submit {
+    width: 200px;
+    background: #E3B873;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+    border: none;
+    font-family: FuturaDemiC;
+    font-size: 15px;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include mobile {
+      width: 340px;
+    }
+  }
+
+  [id^=c]{
+    display: none;
+  }
+
+  [id^=c] + label{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    border: 1px solid #E3B873;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  [id^=c]:checked + label span{
+    position: relative;
+    display: inline-block;    
+    margin-left: -9px;   
+  }
+
+  [id^=c]:checked + label span:before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    width: 4px;
+    height: 2px;
+    background: white;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);  
+  }
+
+  [id^=c]:checked + label span:after{
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: -4px;
+    width: 7px;
+    height: 2px;
+    background: white;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);      
+  }
+
+  &__title {
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 274px;
+    font-family: Yeseva One;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    @include mobile {
+      width: 82%;
+    }
+  }
+  &__feedback {
+    display: block;
+    margin: 21px auto 0;
+    text-align: center;
+  }
+  
+  &__feedback-img:first-child {
+    margin-right: 12px;
+  }
+
+  &__address-img {
+    display: block;
+    margin: 41px auto 0;
+    @include mobile {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 200px;
+    }
+  }
+}
