@@ -170,6 +170,11 @@
     transition: all 0.3s ease-in-out;
     outline: none;
     -webkit-appearance: none;
+    &:hover {
+      transition: .5s ease-in-out;
+      background-color: #c29855;
+      font-size: 16px;
+    }
     @include mobile {
       position: absolute;
       width: 340px;
@@ -205,11 +210,11 @@
     }
   }
 
-  [id^=c]{
+  [id^=c1]{
     display: none;
   }
 
-  [id^=c] + label{
+  [id^=c1] + label{
     display: block;
     width: 18px;
     height: 18px;
@@ -220,25 +225,25 @@
     position: relative;
   }
 
-  [id^=c]:checked + label span{
+  [id^=c1]:checked + label span{
     position: relative;
     display: inline-block;    
     margin-left: -9px;   
   }
 
-  [id^=c]:checked + label span:before{
+  [id^=c1]:checked + label span:before{
     content: '';
     position: absolute;
-    left: 0px;
-    top: -3px;
-    width: 4px;
+    left: 1px;
+    top: -4px;
+    width: 5px;
     height: 2px;
     background: white;
     -webkit-transform: rotate(50deg);
-    transform: rotate(50deg);  
+    transform: rotate(45deg);
   }
 
-  [id^=c]:checked + label span:after{
+  [id^=c1]:checked + label span:after{
     content: '';
     position: absolute;
     left: 3px;

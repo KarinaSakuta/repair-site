@@ -51,6 +51,14 @@
     line-height: 54px;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:hover {
+      transition: .5s ease-in-out;
+      background-color: #c29855;
+    }
+    @include desktop {
+      width: 230px;
+      font-size: 11px;
+    }
   }
 
   &__person-area, &__person-time {

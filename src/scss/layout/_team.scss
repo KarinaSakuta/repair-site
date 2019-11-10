@@ -1,7 +1,7 @@
 .team {
   width: 100%;
   margin: 0 auto;
-  background: linear-gradient(to bottom, black 73%, white 73%);
+  background: linear-gradient(to bottom, #131313 54%, white 54%);
   @include mobile {
     background-color: #252525;
   }
@@ -171,6 +171,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:hover {
+      transition: .5s ease-in-out;
+      background-color: #c29855;
+    }
   }
 
   &__text {

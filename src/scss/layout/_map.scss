@@ -5,6 +5,7 @@
   background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
   @include mobile {
     background-color: #252525;
+    padding-bottom: 115px;
   }
   &__container {
     position: relative;
@@ -187,16 +188,21 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:hover {
+      transition: .5s ease-in-out;
+      background-color: #c29855;
+      font-size: 16px;
+    }
     @include mobile {
       width: 340px;
     }
   }
 
-  [id^=c]{
+  [id^=c3]{
     display: none;
   }
 
-  [id^=c] + label{
+  [id^=c3] + label{
     display: block;
     width: 18px;
     height: 18px;
@@ -207,25 +213,25 @@
     position: relative;
   }
 
-  [id^=c]:checked + label span{
+  [id^=c3]:checked + label span{
     position: relative;
     display: inline-block;    
     margin-left: -9px;   
   }
 
-  [id^=c]:checked + label span:before{
+  [id^=c3]:checked + label span:before{
     content: '';
     position: absolute;
-    left: 0px;
-    top: -3px;
-    width: 4px;
+    left: 1px;
+    top: -4px;
+    width: 5px;
     height: 2px;
     background: white;
     -webkit-transform: rotate(50deg);
-    transform: rotate(50deg);  
+    transform: rotate(45deg);
   }
 
-  [id^=c]:checked + label span:after{
+  [id^=c3]:checked + label span:after{
     content: '';
     position: absolute;
     left: 3px;
@@ -261,6 +267,13 @@
     margin-right: 12px;
   }
 
+  &__feedback-img {
+    border-radius: 50%;
+    &:hover {
+      box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+    }
+  }
+
   &__address-img {
     display: block;
     margin: 41px auto 0;
@@ -270,6 +283,9 @@
       left: 0;
       right: 0;
       width: 200px;
+    }
+    @include desktop {
+      width: 760px;
     }
   }
 }

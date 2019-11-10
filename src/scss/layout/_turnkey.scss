@@ -193,6 +193,11 @@
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+    &:hover {
+      transition: .5s ease-in-out;
+      background-color: #c29855;
+      box-shadow: 0px 5px 15px rgba(181, 128, 44, 0.79);
+    }
     @include mobile {
       margin: auto auto 26px 0;
       width: 338px;
@@ -214,6 +219,11 @@
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+    &:hover {
+      transition: .5s ease-in-out;
+      box-shadow: 0px 5px 15px rgb(230, 230, 230);
+      color: #a0a0a0;
+    }
     @include desktop {
       font-size: 12px;
     }
